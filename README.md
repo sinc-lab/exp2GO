@@ -14,22 +14,18 @@ exp2GO is a novel method for the computational prediction of gene function annot
 
 
 
-This repository is a package to use exp2GO. It is open sourced and free to use. If you use any part of this package, please cite our work. 
+This repository provides several notebooks to use exp2GO. It is open sourced and free to use. If you use any part of this package, please cite our work. 
 
 ## Quick start 
 
-Reproducing paper results: [this notebook] (https://colab.research.google.com/drive/1KWaetne4PF7-EkVkR-uZ31N95QlIewJH) contains the detailed steps to reproduce the results presented in the paper. 
+Reproducing paper results: the next notebooks reproduce the results presented in the paper. 
 
-
-
-- `01_expression_<*>`: for each specie * (ara, dicty, yeast)
-
+- `01_expression_<*>`: for each specie * ([ara](https://colab.research.google.com/drive/1uh55HbhEELqErZq8w-mwv-gpZGcnCp8M), [dicty](https://colab.research.google.com/drive/1tEKd2Z63iULzQaarNSw9HC8GpwDNktcj#scrollTo=1kk9e0WEb5fj), [yeast](https://colab.research.google.com/drive/1h0zZAfa7RpvUbpSzZO02Hfy2C-jH6xgv))
   - conversion of the original expression files to an unified format
   - remove the empty genes
   - calculate several distance matrices (euclidean, correlation, cosine...)
 
 - `02_annotations`:
-
   - extract annotations from GAF
   - seach for gene names in DB_Synonym
   - only for expressed genes
@@ -41,30 +37,30 @@ Reproducing paper results: [this notebook] (https://colab.research.google.com/dr
 - `41loo/`:  Leave-one-out (LOO) experiment
 
   - `03_ancestors41`:
-    - propagate ancestors for the annotations in 02
+    - propagate [ancestors](https://colab.research.google.com/drive/1h2pAKVhHA3TgQ5PMs18duu156tBoywuQ) for the annotations in 02
     - using CAFA3 referece OBO (2016-06-01) 
   - `04_semantic_dist_genes`:
-    - sementic distance between genes
+    - semantic [distance](https://colab.research.google.com/drive/1-5cbXyF2y5PF-vlRItutEsY7cve68Dbu#scrollTo=Ue9sA8t1hUj2) between genes
     - for annotations extracted in 02
     - provides Resnik, Lin, Relevance
     - integrated by gene with min, max, average or BMA
 
 - `42delta/`:  Delta-T experiment (CAFA3)
   - `03_filter_terms`:
-    - filter terms from the annotations file in step 02
+    - [filter terms](https://colab.research.google.com/drive/1_S56rMVPt5Iyx5SU5dn_vxPLePmULG0V) from the annotations file in step 02
       - with less than 3 occurrences
       - not in the intersection of terms in T-1 and T0
 
   - `04_ancestors42`:
-    - the same as `03_ancestors41` but using terms filtered in previous step
+    - the same as `03_ancestors41` but [using terms filtered](https://colab.research.google.com/drive/11VbEyJFw7cXylfu-chbHLiwCvrtrfsth) in previous step
     - using CAFA3 referece OBO (2016-06-01) 
-    - `04b_convert_to_onehot`: convert output file format for matlab compatibility
+    - `04b_convert_to_onehot`: [convert](https://colab.research.google.com/drive/19-OlNx4c7siHWLDpQ_91RKjOt3GpKski#scrollTo=Ue9sA8t1hUj2) output file format for matlab compatibility
 
   - `051_semantic_dist_genes`:
-    - sementic distance between genes
+    - semantic [distance](https://colab.research.google.com/drive/1M9p3K4MkrjJXKoEbI0rGymM1C-zyLqZZ#scrollTo=Ue9sA8t1hUj2) between genes
     - from the output of step `03_filter_terms`
 
   - `052_semantic_dist_terms`:
-    - sementic distance between isolated terms
+    - semantic [distance](https://colab.research.google.com/drive/1IhhhU2CgJBZTPdXBFpZ6bAt1NfLBLq_H#scrollTo=Ue9sA8t1hUj2) between isolated terms
     - from the output of step `04_ancestors42`
     - provides Resnik, Lin, Relevance
