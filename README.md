@@ -20,14 +20,14 @@ This repository provides several notebooks to use exp2GO. It is open sourced and
 
 Reproducing paper results: the next notebooks reproduce the results presented in the paper. 
 
-- `01_expression_<*>`: for each specie * ([ara](https://colab.research.google.com/drive/1uh55HbhEELqErZq8w-mwv-gpZGcnCp8M), [dicty](https://colab.research.google.com/drive/1tEKd2Z63iULzQaarNSw9HC8GpwDNktcj#scrollTo=1kk9e0WEb5fj), [yeast](https://colab.research.google.com/drive/1h0zZAfa7RpvUbpSzZO02Hfy2C-jH6xgv))
+- `01_expression_<*>`: for each species * ([ara](https://colab.research.google.com/drive/1uh55HbhEELqErZq8w-mwv-gpZGcnCp8M), [dicty](https://colab.research.google.com/drive/1tEKd2Z63iULzQaarNSw9HC8GpwDNktcj#scrollTo=1kk9e0WEb5fj), [yeast](https://colab.research.google.com/drive/1h0zZAfa7RpvUbpSzZO02Hfy2C-jH6xgv))
   - conversion of the original expression files to an unified format
   - remove the empty genes
   - calculate several distance matrices (euclidean, correlation, cosine...)
 
 - `02_annotations`:
-  - extract annotations from GAF
-  - seach for gene names in DB_Synonym
+  - extract [annotations](https://colab.research.google.com/drive/1K0fEeDMnyHTfTJhoHO3TKhLXbfaz1952) from GAF
+  - search for gene names in DB_Synonym
   - only for expressed genes
   - for each species, for T-1, T0 and T1
   - with experimental annotations
@@ -38,7 +38,7 @@ Reproducing paper results: the next notebooks reproduce the results presented in
 
   - `03_ancestors41`:
     - propagate [ancestors](https://colab.research.google.com/drive/1h2pAKVhHA3TgQ5PMs18duu156tBoywuQ) for the annotations in 02
-    - using CAFA3 referece OBO (2016-06-01) 
+    - using CAFA3 reference OBO (2016-06-01) 
   - `04_semantic_dist_genes`:
     - semantic [distance](https://colab.research.google.com/drive/1-5cbXyF2y5PF-vlRItutEsY7cve68Dbu#scrollTo=Ue9sA8t1hUj2) between genes
     - for annotations extracted in 02
