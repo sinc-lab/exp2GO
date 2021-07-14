@@ -5,7 +5,8 @@ L. Di Persia, T. Lopez, A. Arce, D.H. Milone, and G. Stegmayer, "*exp2GO: improv
 
 exp2GO is a novel method for the computational prediction of gene function annotations based on the inference of GO similarities from expression similarities.
 
-![figure1.pdf](figure1.pdf)
+![exp2go](exp2go.png)
+
 **Pipeline of exp2GO for inferring GO labels**. A) Expression data. B) Expression pairwise Euclidean distance matrix dE among all genes in the study. C) Semantic data: GO annotations for well-known genes (gene 1, gene 2, ...); some genes in the study are completely unknown (gene A, gene B, ...). D) Semantic distance matrix dGO among all genes: with missing rows and columns because many genes are not semantically annotated. E) and F)With exp2GO it is possible to complete the missing distances in dGO, using the information available in B) and D). G) Once the dGO matrix is completed, GO annotations are assigned according to the reconstructed semantic space. From the closest set of genes with known GO terms, the potential terms
 (according to a Bayesian model) are sorted in descending order by their posterior probability. Finally, the candidate GO terms with the highest accumulated probability (in yellow) are assigned to each un-annotated gene (gene A, gene B, ...).
 
