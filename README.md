@@ -1,5 +1,5 @@
 # exp2GO
-This repository contains the data and original methods proposed in:
+This repository contains the data and source code for the original methods proposed in:
 
 L. Di Persia, T. Lopez, A. Arce, D.H. Milone, and G. Stegmayer, "*exp2GO: improving prediction of functions in the Gene Ontology with expression data*", 2021.
 
