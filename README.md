@@ -15,14 +15,14 @@ exp2GO is a novel method for the computational prediction of gene function annot
 
 This repository provides the data and several notebooks to use exp2GO. It is open sourced and free to use. If you use any part of this, please cite our work. 
 
-## Quick start 
+## Reproducing paper results 
 
-Reproducing paper results: the next notebooks reproduce the results presented in the paper. 
+The next notebooks reproduce the results presented in the paper. 
 
 1. [Expression data](https://colab.research.google.com/github/sinc-lab/exp2GO/blob/master/notebooks/01_expression_ara_espinoza.ipynb): 
-  - conversion of the original expression files to an unified format
-  - remove the empty genes
-  - calculate several distance matrices (euclidean, correlation, cosine...)
+    - conversion of the original expression files to an unified format
+    - remove the empty genes
+    - calculate several distance matrices (euclidean, correlation, cosine...)
 
 - `02_annotations`:
   - extract [annotations](https://colab.research.google.com/drive/1K0fEeDMnyHTfTJhoHO3TKhLXbfaz1952) from GAF
