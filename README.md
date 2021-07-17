@@ -19,7 +19,7 @@ This repository provides the data and several notebooks to use exp2GO. It is ope
 
 Reproducing paper results: the next notebooks reproduce the results presented in the paper. 
 
-- `01_expression_<*>`: for each species * ([ara](https://colab.research.google.com/drive/1uh55HbhEELqErZq8w-mwv-gpZGcnCp8M), [dicty](https://colab.research.google.com/drive/1tEKd2Z63iULzQaarNSw9HC8GpwDNktcj#scrollTo=1kk9e0WEb5fj), [yeast](https://colab.research.google.com/drive/1h0zZAfa7RpvUbpSzZO02Hfy2C-jH6xgv))
+1. [Expression data](https://colab.research.google.com/github/sinc-lab/exp2GO/blob/master/notebooks/01_expression_ara_espinoza.ipynb): 
   - conversion of the original expression files to an unified format
   - remove the empty genes
   - calculate several distance matrices (euclidean, correlation, cosine...)
