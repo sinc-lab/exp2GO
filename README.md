@@ -22,14 +22,10 @@ The next notebooks reproduce the results presented in the paper (by default for 
     - calculate the expression distance matrix (cosine distance by default)
     - other notebooks are provided for [*Dictyostelium discoideum*](https://colab.research.google.com/github/sinc-lab/exp2GO/blob/master/notebooks/01_expression_dicty_zitnik.ipynb) and [*Saccharomyces cerevisiae*](https://colab.research.google.com/github/sinc-lab/exp2GO/blob/master/notebooks/01_expression_yeast_eisen.ipynb)
 
-- `02_annotations`:
-  - extract [annotations](https://colab.research.google.com/drive/1K0fEeDMnyHTfTJhoHO3TKhLXbfaz1952) from GAF
-  - search for gene names in DB_Synonym
-  - only for expressed genes
-  - for each species, for T-1, T0 and T1
-  - with experimental annotations
-  - Biological process
-  - `bkp/exp2go_Ancestors_oboT-1_gafT0.ipynb`: alternative version downloading obo and gaf.
+2. [Annotations](https://colab.research.google.com/github/sinc-lab/exp2GO/blob/master/notebooks/02_annotations.ipynb):
+    - extract annotations from GAF (Biological Process by default)
+    - only for expressed genes in step 1
+    - with experimental annotations
 
 - `41loo/`:  Leave-one-out (LOO) experiment
 
