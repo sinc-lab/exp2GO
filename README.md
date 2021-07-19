@@ -28,32 +28,32 @@ The next notebooks reproduce the results presented in the paper (by default for 
     - with experimental annotations
 
 ### Leave-one-out (LOO) experiment
-3. [Ancestors for Leave-One-Out (LOO) experiment](https://colab.research.google.com/github/sinc-lab/exp2GO/blob/master/notebooks/03_loo_ancestors.ipynb):
-    - propagate for the annotations extracted in step 2
+3. [Ancestors for LOO experiment](https://colab.research.google.com/github/sinc-lab/exp2GO/blob/master/notebooks/03_loo_ancestors.ipynb):
+    - propagate annotations extracted in step 2
     - using CAFA3 reference OBO (2016-06-01)
 
 4. [Semantic distances for LOO experiment](https://colab.research.google.com/github/sinc-lab/exp2GO/blob/master/notebooks/04_loo_semantic_dist_genes.ipynb):
     - calculate pairwise semantic distances
-    - provides Resnik, Lin, Relevance (by default)
+    - provide Resnik, Lin, Relevance (by default)
     - integrated by gene with min (by default), max, average or BMA
 
 5. [exp2GO LOO experiment](https://colab.research.google.com/github/sinc-lab/exp2GO/blob/master/notebooks/exp2go_loo.ipynb)
 
 ### Delta-T (CAFA3) experiment
+3. [Filter terms for DeltaT experiment](https://colab.research.google.com/github/sinc-lab/exp2GO/blob/master/notebooks/03_deltaT_filter_terms.ipynb):
+    - filter terms from the annotations extracted in step 2
+    - with less than 3 occurrences
+    - and not in the intersection between T-1 and T0
 
-  - `03_filter_terms`:
-    - [filter terms](https://colab.research.google.com/drive/1_S56rMVPt5Iyx5SU5dn_vxPLePmULG0V) from the annotations file in step 02
-      - with less than 3 occurrences
-      - not in the intersection of terms in T-1 and T0
+4. [Ancestors for DeltaT experiment](https://colab.research.google.com/github/sinc-lab/exp2GO/blob/master/notebooks/04_deltaT_ancestors.ipynb):
+    - propagate annotations extracted in the previous step
+    - using CAFA3 reference OBO (2016-06-01)
 
-  - `04_ancestors42`:
-    - the same as `03_ancestors41` but [using terms filtered](https://colab.research.google.com/drive/11VbEyJFw7cXylfu-chbHLiwCvrtrfsth) in previous step
-    - using CAFA3 referece OBO (2016-06-01) 
-    - `04b_convert_to_onehot`: [convert](https://colab.research.google.com/drive/19-OlNx4c7siHWLDpQ_91RKjOt3GpKski#scrollTo=Ue9sA8t1hUj2) output file format for matlab compatibility
+5. [Semantic distances for DeltaT experiment](https://colab.research.google.com/github/sinc-lab/exp2GO/blob/master/notebooks/05_deltaT_semantic_dist_genes.ipynb):
+    - calculate pairwise semantic distances
+    - provide Resnik, Lin, Relevance (by default)
+    - integrated by gene with min (by default), max, average or BMA
 
-  - `051_semantic_dist_genes`:
-    - semantic [distance](https://colab.research.google.com/drive/1M9p3K4MkrjJXKoEbI0rGymM1C-zyLqZZ#scrollTo=Ue9sA8t1hUj2) between genes
-    - from the output of step `03_filter_terms`
-
+6. [exp2GO DeltaT experiment](https://colab.research.google.com/github/sinc-lab/exp2GO/blob/master/notebooks/exp2go_deltaT.ipynb)
 
 
