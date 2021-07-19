@@ -9,11 +9,11 @@ exp2GO is a novel method for the computational prediction of gene function annot
 
 **Pipeline of exp2GO for inferring GO labels**
 
-A) Expression data. 
+    A) Expression data. 
 
-B) Expression pairwise distance matrix among all genes in the study. 
+    B) Expression pairwise distance matrix among all genes in the study. 
 
-C) Semantic data: GO annotations for well-known genes (gene 1, gene 2,...); some genes in the study are completely unknown (gene A, gene B,...). 
+    C) Semantic data: GO annotations for well-known genes (gene 1, gene 2,...); some genes in the study are completely unknown (gene A, gene B,...). 
 
 D) Semantic distance matrix among all genes: with missing rows and columns because many genes are not semantically annotated. 
 
