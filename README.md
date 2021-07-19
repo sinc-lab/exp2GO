@@ -27,6 +27,7 @@ The next notebooks reproduce the results presented in the paper (by default for 
     - only for expressed genes in step 1
     - with experimental annotations
 
+### Leave-one-out (LOO) experiment
 3. [Ancestors for Leave-One-Out (LOO) experiment](https://colab.research.google.com/github/sinc-lab/exp2GO/blob/master/notebooks/03_loo_ancestors.ipynb):
     - propagate for the annotations extracted in step 2
     - using CAFA3 reference OBO (2016-06-01)
@@ -36,7 +37,10 @@ The next notebooks reproduce the results presented in the paper (by default for 
     - provides Resnik, Lin, Relevance (by default)
     - integrated by gene with min (by default), max, average or BMA
 
-- `42delta/`:  
+5. [exp2GO LOO experiment](https://colab.research.google.com/github/sinc-lab/exp2GO/blob/master/notebooks/exp2go_loo.ipynb)
+
+### Delta-T (CAFA3) experiment
+
   - `03_filter_terms`:
     - [filter terms](https://colab.research.google.com/drive/1_S56rMVPt5Iyx5SU5dn_vxPLePmULG0V) from the annotations file in step 02
       - with less than 3 occurrences
@@ -51,12 +55,5 @@ The next notebooks reproduce the results presented in the paper (by default for 
     - semantic [distance](https://colab.research.google.com/drive/1M9p3K4MkrjJXKoEbI0rGymM1C-zyLqZZ#scrollTo=Ue9sA8t1hUj2) between genes
     - from the output of step `03_filter_terms`
 
-  - `052_semantic_dist_terms`:
-    - semantic [distance](https://colab.research.google.com/drive/1IhhhU2CgJBZTPdXBFpZ6bAt1NfLBLq_H#scrollTo=Ue9sA8t1hUj2) between isolated terms
-    - from the output of step `04_ancestors42`
-    - provides Resnik, Lin, Relevance
 
 
-Leave-one-out (LOO) experiment
-
-Delta-T (CAFA3) experiment
