@@ -27,18 +27,16 @@ The next notebooks reproduce the results presented in the paper (by default for 
     - only for expressed genes in step 1
     - with experimental annotations
 
-- `41loo/`:  Leave-one-out (LOO) experiment
+3. [Ancestors for Leave-One-Out (LOO) experiment](https://colab.research.google.com/github/sinc-lab/exp2GO/blob/master/notebooks/03_loo_ancestors.ipynb):
+    - propagate for the annotations extracted in step 2
+    - using CAFA3 reference OBO (2016-06-01)
 
-  - `03_ancestors41`:
-    - propagate [ancestors](https://colab.research.google.com/drive/1h2pAKVhHA3TgQ5PMs18duu156tBoywuQ) for the annotations in 02
-    - using CAFA3 reference OBO (2016-06-01) 
-  - `04_semantic_dist_genes`:
-    - semantic [distance](https://colab.research.google.com/drive/1-5cbXyF2y5PF-vlRItutEsY7cve68Dbu#scrollTo=Ue9sA8t1hUj2) between genes
-    - for annotations extracted in 02
-    - provides Resnik, Lin, Relevance
-    - integrated by gene with min, max, average or BMA
+4. [Semantic distances for LOO experiment](https://colab.research.google.com/github/sinc-lab/exp2GO/blob/master/notebooks/04_loo_semantic_dist_genes.ipynb):
+    - calculate pairwise semantic distances
+    - provides Resnik, Lin, Relevance (by default)
+    - integrated by gene with min (by default), max, average or BMA
 
-- `42delta/`:  Delta-T experiment (CAFA3)
+- `42delta/`:  
   - `03_filter_terms`:
     - [filter terms](https://colab.research.google.com/drive/1_S56rMVPt5Iyx5SU5dn_vxPLePmULG0V) from the annotations file in step 02
       - with less than 3 occurrences
@@ -57,3 +55,8 @@ The next notebooks reproduce the results presented in the paper (by default for 
     - semantic [distance](https://colab.research.google.com/drive/1IhhhU2CgJBZTPdXBFpZ6bAt1NfLBLq_H#scrollTo=Ue9sA8t1hUj2) between isolated terms
     - from the output of step `04_ancestors42`
     - provides Resnik, Lin, Relevance
+
+
+Leave-one-out (LOO) experiment
+
+Delta-T (CAFA3) experiment
