@@ -7,12 +7,18 @@ exp2GO is a novel method for the computational prediction of gene function annot
 
 ![exp2go](exp2go.png)
 
-**Pipeline of exp2GO for inferring GO labels**. 
+**Pipeline of exp2GO for inferring GO labels**
+
 A) Expression data. 
+
 B) Expression pairwise distance matrix among all genes in the study. 
+
 C) Semantic data: GO annotations for well-known genes (gene 1, gene 2,...); some genes in the study are completely unknown (gene A, gene B,...). 
+
 D) Semantic distance matrix among all genes: with missing rows and columns because many genes are not semantically annotated. 
+
 E) and F) exp2GO completes the missing semantic distances, using the information available in B) and D). 
+
 G) Once the semantic distance matrix is completed, GO annotations are assigned according to the reconstructed semantic space. From the closest set of genes with known GO terms, the potential terms (according to a Bayesian model) are sorted in descending order by their posterior probability. Finally, the candidate GO terms with the highest accumulated probability (in yellow) are assigned to each un-annotated gene (gene A, gene B,...).
 
 This repository provides the data and several notebooks to use exp2GO. It is open sourced and free to use. If you use any part of this, please cite our work. 
